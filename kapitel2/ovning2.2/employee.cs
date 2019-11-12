@@ -15,9 +15,16 @@ namespace ovning2._2
             this._name = name;
         }
 
+        // ToString metod
         public override string ToString()
         {
             return _name;
+        }
+
+        // CalculateSalary metod
+        public virtual double CalculateSalary()
+        {
+            return 0d;
         }
     }
 }

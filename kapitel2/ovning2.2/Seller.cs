@@ -20,7 +20,13 @@ namespace ovning2._2
 
         public override string ToString()
         {
-            return _name + " " + _provision + " " + _sellerSale;
+            return _name + " (Säljare)";
+        }
+
+        // CalculateSalary metod
+        public override double CalculateSalary()
+        {
+            return (_sellerSale * (_provision / 100));
         }
     }
 }
