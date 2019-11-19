@@ -305,7 +305,7 @@
             this.lbxRegister.FormattingEnabled = true;
             this.lbxRegister.Location = new System.Drawing.Point(27, 244);
             this.lbxRegister.Name = "lbxRegister";
-            this.lbxRegister.Size = new System.Drawing.Size(163, 160);
+            this.lbxRegister.Size = new System.Drawing.Size(163, 134);
             this.lbxRegister.TabIndex = 11;
             // 
             // lbxSalaryPayment
@@ -313,7 +313,7 @@
             this.lbxSalaryPayment.FormattingEnabled = true;
             this.lbxSalaryPayment.Location = new System.Drawing.Point(215, 244);
             this.lbxSalaryPayment.Name = "lbxSalaryPayment";
-            this.lbxSalaryPayment.Size = new System.Drawing.Size(162, 160);
+            this.lbxSalaryPayment.Size = new System.Drawing.Size(162, 134);
             this.lbxSalaryPayment.TabIndex = 12;
             // 
             // tbxTotalSalary
@@ -335,11 +335,11 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(408, 372);
+            this.btnDelete.Location = new System.Drawing.Point(27, 384);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(163, 22);
             this.btnDelete.TabIndex = 14;
-            this.btnDelete.Text = "Ta bort";
+            this.btnDelete.Text = "Ta bort en person";
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
             // 
