@@ -7,7 +7,7 @@
     <ProjectGuid>{E75222CA-FA50-4213-B825-C7E39629E667}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>ovning2._3</RootNamespace>
-    <AssemblyName>ovning2._3</AssemblyName>
+    <AssemblyName>ovning2.3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
