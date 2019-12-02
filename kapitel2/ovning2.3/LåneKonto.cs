@@ -8,26 +8,32 @@ namespace ovning2._3
 {
     class LåneKonto : BankKonto
     {
-        public LåneKonto(string personNummer, double ränteSats) : base(personNummer, ränteSats) { }
+        double _kredit;
+        public LåneKonto(string personNummer, double ränteSats, double kredit) : base(personNummer, ränteSats) { }
 
         public override double RäknaUtRänta()
         {
-            throw new NotImplementedException();
+            return base._behållning * ((base._ränteSats / 100) + 1);
         }
 
         public override void SättaIn(double värde)
         {
-            throw new NotImplementedException();
+            base._behållning += värde;
         }
 
         public override bool TaUt(double värde)
         {
-            throw new NotImplementedException();
+            if((base._behållning - _kredit) < (base._behållning - värde))
+            {
+                base._behållning -= (värde - _kredit);
+                return true;
+            }
+            return false;
         }
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            return "Lånekonto " + base._personNummer + ": " + base._behållning + "Kr";
         }
     }
 }

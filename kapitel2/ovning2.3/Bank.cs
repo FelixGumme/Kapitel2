@@ -8,5 +8,6 @@ namespace ovning2._3
 {
     class Bank
     {
+
     }
 }
